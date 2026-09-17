@@ -26,10 +26,18 @@ BRT = timezone(timedelta(hours=-3))
 AGORA = datetime.now(BRT).strftime("%d/%m/%Y %H:%M")
 
 
-def abrir(opener, url, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with opener.open(req, timeout=timeout) as r:
-        return r.read()
+def abrir(opener, url, timeout=90, tentativas=3):
+    ultimo = None
+    for i in range(tentativas):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with opener.open(req, timeout=timeout) as r:
+                return r.read()
+        except Exception as e:  # noqa: BLE001
+            ultimo = e
+            import time
+            time.sleep(10 * (i + 1))
+    raise ultimo
 
 
 def texto_limpo(html_latin1):
@@ -118,6 +126,11 @@ def main():
                 status["mudancas"].append(f"Processo {proc} ({PROCESSOS[proc]}) citado na RPI {status['rpi']}")
     except Exception as e:  # noqa: BLE001
         status["erro"] = f"{type(e).__name__}: {e}"
+        # preserva a linha de base anterior para a comparacao da proxima semana
+        if not status["pepi"]:
+            status["pepi"] = anterior.get("pepi", {})
+        if status["rpi"] is None:
+            status["rpi"] = anterior.get("rpi")
 
     with open("status.json", "w", encoding="utf-8") as f:
         json.dump(status, f, ensure_ascii=False, indent=2)
