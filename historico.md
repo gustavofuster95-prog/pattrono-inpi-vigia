@@ -1,3 +1,4 @@
 - 17/09/2026 11:24 | RPI 2906 | movimento=False | erro=None
 - 17/09/2026 11:26 | RPI None | movimento=False | erro=TimeoutError: The read operation timed out
 - 17/09/2026 11:28 | RPI 2906 | movimento=False | erro=None
+- 17/09/2026 11:32 | RPI 2906 | movimento=True | erro=None

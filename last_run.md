@@ -1,4 +1,4 @@
-# Vigia INPI Pattrono — 17/09/2026 11:28 (BRT)
+# Vigia INPI Pattrono — 17/09/2026 11:32 (BRT)
 
 RPI verificada: **2906**
 
@@ -8,6 +8,10 @@ RPI verificada: **2906**
 
 ## COSTVISION (nominativa, NCL 42) — pedido 944976891
 - Citado na RPI desta semana: não
-- pePI: INPI Portal do Governo Brasileiro Atualize sua Barra de Governo Instituto Nacional da Propriedade Industrial Ministério do Desenvolvimento, Indústria, Comércio e Serviços ALERTA CONTRA FRAUDES : o INPI não envia boletos nem cobranças. Leia mais aqui 
+- pePI: RESULTADO DA PESQUISA Nº do Processo: 944976891 AVISO: O pedido de registro de marca nº 944976891 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publicações relativas a
 
-Sem movimentação. Silêncio = nenhuma novidade nos dois pedidos.
+## 🔔 MOVIMENTAÇÃO DETECTADA
+
+- pePI mudou para 944976891 (COSTVISION (nominativa, NCL 42))
+
+Abrir a RPI e o pePI para ler o despacho. Prazos correm da data de publicação na RPI.
