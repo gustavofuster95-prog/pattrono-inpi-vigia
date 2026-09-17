@@ -1,0 +1,1 @@
+- 17/09/2026 11:24 | RPI 2906 | movimento=False | erro=None
