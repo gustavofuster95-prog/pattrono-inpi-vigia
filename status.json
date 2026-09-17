@@ -1,5 +1,5 @@
 {
-  "verificado_em": "17/09/2026 11:32",
+  "verificado_em": "17/09/2026 11:33",
   "erro": null,
   "movimento": true,
   "rpi": 2906,
@@ -9,15 +9,16 @@
   },
   "pepi": {
     "944976310": {
-      "texto": "RESULTADO DA PESQUISA Nº do Processo: 944976310 AVISO: O pedido de registro de marca nº 944976310 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publicações relativas ao pedido em questão. O INPI disponibiliza",
-      "hash": "be6102f9812d4ce352a7f8e6fdc4e2722fd7c6c5"
+      "texto": "RESULTADO DA PESQUISA N� do Processo: 944976310 AVISO: O pedido de registro de marca n� 944976310 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publica��es relativas ao pedido em quest�o. O INPI disponibiliza",
+      "hash": "cf0c980275d66be6d6f5d73afaccdccdb65da345"
     },
     "944976891": {
-      "texto": "RESULTADO DA PESQUISA Nº do Processo: 944976891 AVISO: O pedido de registro de marca nº 944976891 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publicações relativas ao pedido em questão. O INPI disponibiliza",
-      "hash": "71191c2c60092c05112918652b38c94954c61ee9"
+      "texto": "RESULTADO DA PESQUISA N� do Processo: 944976891 AVISO: O pedido de registro de marca n� 944976891 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publica��es relativas ao pedido em quest�o. O INPI disponibiliza",
+      "hash": "2e8e2ea8811ee6631e66716c1ad94a432edd1e95"
     }
   },
   "mudancas": [
+    "pePI mudou para 944976310 (PATTRONO (nominativa, NCL 35))",
     "pePI mudou para 944976891 (COSTVISION (nominativa, NCL 42))"
   ]
 }
