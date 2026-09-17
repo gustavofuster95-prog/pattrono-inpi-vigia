@@ -1,9 +1,21 @@
 {
-  "verificado_em": "17/09/2026 11:26",
-  "erro": "TimeoutError: The read operation timed out",
+  "verificado_em": "17/09/2026 11:28",
+  "erro": null,
   "movimento": false,
-  "rpi": null,
-  "rpi_hits": {},
-  "pepi": {},
+  "rpi": 2906,
+  "rpi_hits": {
+    "944976310": false,
+    "944976891": false
+  },
+  "pepi": {
+    "944976310": {
+      "texto": "RESULTADO DA PESQUISA Nº do Processo: 944976310 AVISO: O pedido de registro de marca nº 944976310 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publicações relativas ao pedido em questão. O INPI disponibiliza",
+      "hash": "be6102f9812d4ce352a7f8e6fdc4e2722fd7c6c5"
+    },
+    "944976891": {
+      "texto": "INPI Portal do Governo Brasileiro Atualize sua Barra de Governo Instituto Nacional da Propriedade Industrial Ministério do Desenvolvimento, Indústria, Comércio e Serviços ALERTA CONTRA FRAUDES : o INPI não envia boletos nem cobranças. Leia mais aqui . pePI - Pesquisa em Propriedade Industrial Login: Senha: Não possui login? Cadastre-se aqui. Esqueceu Usuário/Senha? Clique aqui. Para realizar a Pesquisa anonimamente aperte apenas o botão Continuar.... O preenchimento do Login e Senha não é obrigatório. Entretanto, irá permitir acessos a mais serviços, como por exemplo, a disponibilização de documentos. Entrar com GOV.BR Rua Mayrink Veiga, 9 - Centro - RJ - CEP: 20090-910",
+      "hash": "09c540dc117dd14af974e6459e6b1a1d39f022c6"
+    }
+  },
   "mudancas": []
 }
