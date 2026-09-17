@@ -41,10 +41,7 @@ def abrir(opener, url, timeout=90, tentativas=3):
 
 
 def texto_limpo(html_bruto):
-    try:
-        t = html_bruto.decode("utf-8")
-    except UnicodeDecodeError:
-        t = html_bruto.decode("latin-1", errors="replace")
+    t = html_bruto.decode("utf-8", errors="replace")
     t = re.sub(r"<[^>]+>", " ", t)
     t = re.sub(r"&nbsp;?", " ", t)
     t = re.sub(r"\s+", " ", t).strip()

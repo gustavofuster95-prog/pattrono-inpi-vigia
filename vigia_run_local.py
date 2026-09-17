@@ -28,6 +28,9 @@ def main():
         p = run(["git", "push"])
         print("push:", p.returncode, p.stderr[-200:])
 
+    if os.environ.get("CALIBRACAO"):
+        print("modo calibracao: sem issue")
+        return
     titulo = None
     if status.get("movimento"):
         titulo = f"🔔 Movimentação nos pedidos INPI da Pattrono ({status['verificado_em']})"
