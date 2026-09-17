@@ -54,6 +54,9 @@ def normalizar_pepi(t):
     j = t.find("ferramenta acess")
     trecho = t[i: j if j > i else i + 700] if i >= 0 else t[:700]
     trecho = re.sub(r"\(\s*\d{2}/\d{2}/\d{4}[^)]*\)", "", trecho)
+    # o INPI alterna a codificacao entre respostas; normaliza para ASCII puro
+    # para o hash ficar estavel (acentos e lixo de encoding viram espaco)
+    trecho = re.sub(r"[^ -~]+", " ", trecho)
     return re.sub(r"\s+", " ", trecho).strip()
 
 
