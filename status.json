@@ -1,7 +1,7 @@
 {
   "verificado_em": "17/09/2026 11:34",
   "erro": null,
-  "movimento": true,
+  "movimento": false,
   "rpi": 2906,
   "rpi_hits": {
     "944976310": false,
@@ -17,8 +17,5 @@
       "hash": "80f89a8f14e183572bbc372bb2f0eed9cb6cc0e4"
     }
   },
-  "mudancas": [
-    "pePI mudou para 944976310 (PATTRONO (nominativa, NCL 35))",
-    "pePI mudou para 944976891 (COSTVISION (nominativa, NCL 42))"
-  ]
+  "mudancas": []
 }
