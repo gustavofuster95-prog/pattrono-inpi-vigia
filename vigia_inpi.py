@@ -40,8 +40,11 @@ def abrir(opener, url, timeout=90, tentativas=3):
     raise ultimo
 
 
-def texto_limpo(html_latin1):
-    t = html_latin1.decode("latin-1", errors="replace")
+def texto_limpo(html_bruto):
+    try:
+        t = html_bruto.decode("utf-8")
+    except UnicodeDecodeError:
+        t = html_bruto.decode("latin-1", errors="replace")
     t = re.sub(r"<[^>]+>", " ", t)
     t = re.sub(r"&nbsp;?", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
@@ -57,21 +60,38 @@ def normalizar_pepi(t):
     return re.sub(r"\s+", " ", trecho).strip()
 
 
-def consulta_pepi():
+def nova_sessao():
     cj = http.cookiejar.CookieJar()
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
     abrir(opener, "https://busca.inpi.gov.br/pePI/")
     abrir(opener, "https://busca.inpi.gov.br/pePI/servlet/LoginController?action=login")
+    return opener
+
+
+def consulta_pepi():
+    import time
+    opener = nova_sessao()
     saida = {}
     for proc in PROCESSOS:
         url = ("https://busca.inpi.gov.br/pePI/servlet/MarcasServletController"
                f"?Action=searchMarca&tipoPesquisa=BY_NUM_PROC&NumPedido={proc}")
-        bruto = abrir(opener, url)
-        t = normalizar_pepi(texto_limpo(bruto))
+        t = None
+        for tentativa in range(3):
+            bruto = abrir(opener, url)
+            cand = normalizar_pepi(texto_limpo(bruto))
+            # valida: tem que ser a pagina de resultado DESTE processo
+            if "RESULTADO DA PESQUISA" in cand and proc in cand:
+                t = cand
+                break
+            time.sleep(8)
+            opener = nova_sessao()  # sessao caiu: refaz o login anonimo
+        if t is None:
+            raise RuntimeError(f"pePI nao retornou resultado valido para {proc}")
         saida[proc] = {
             "texto": t[:900],
             "hash": hashlib.sha1(t.encode("utf-8")).hexdigest(),
         }
+        time.sleep(3)
     return saida
 
 
