@@ -1,13 +1,5 @@
-# Vigia INPI Pattrono — 17/09/2026 16:12 (BRT)
+# Vigia INPI Pattrono — 22/09/2026 20:58 (BRT)
 
-RPI verificada: **2906**
+**FALHA na verificação:** `URLError: <urlopen error timed out>`
 
-## PATTRONO (nominativa, NCL 35) — pedido 944976310
-- Citado na RPI desta semana: não
-- pePI: RESULTADO DA PESQUISA N do Processo: 944976310 AVISO: O pedido de registro de marca n 944976310 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publica es relativas ao p
-
-## COSTVISION (nominativa, NCL 42) — pedido 944976891
-- Citado na RPI desta semana: não
-- pePI: RESULTADO DA PESQUISA N do Processo: 944976891 AVISO: O pedido de registro de marca n 944976891 consta em nosso banco de dados. Por favor, acesse regularmente a Revista da Propriedade Industrial (RPI), a fim de acompanhar as publica es relativas ao p
-
-Sem movimentação. Silêncio = nenhuma novidade nos dois pedidos.
+Verificar manualmente: https://busca.inpi.gov.br/pePI/ (pedidos 944976310 e 944976891).
